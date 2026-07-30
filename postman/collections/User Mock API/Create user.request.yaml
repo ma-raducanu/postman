@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{url}}/users"
+method: POST
+settings: {}
+examples: ./.resources/Create user.resources/examples
+order: 2000

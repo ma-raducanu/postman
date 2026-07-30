@@ -1,0 +1,7 @@
+workspace:
+  id: d396fad6-33c7-4858-8712-0a9d08ed8c82
+cloudResources:
+  collections:
+    ../postman/collections/User Mock API: 56947739-86aa7966-cbfa-4476-9882-d19611221ea7
+  environments:
+    ../postman/environments/User Mock Server.environment.yaml: 56947739-0c7456b6-476c-46ba-a372-37eccd8efc95

@@ -1,0 +1,25 @@
+$kind: http-example
+request:
+  url: "{{url}}/users"
+  method: GET
+response:
+  statusCode: 200
+  statusText: OK
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: |-
+      [
+          {
+              "id": 1,
+              "name": "Alex",
+              "role": "Developer"
+          },
+          {
+              "id": 2,
+              "name": "Sam",
+              "role": "Designer"
+          }
+      ]
+order: 1000

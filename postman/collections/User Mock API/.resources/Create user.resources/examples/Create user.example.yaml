@@ -1,0 +1,19 @@
+$kind: http-example
+request:
+  url: "{{url}}/users"
+  method: POST
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: application/json
+  body:
+    type: json
+    content: "{\r
+
+      \  \"message\": \"User created successfully!\",\r
+
+      \  \"user\": { \"id\": 3, \"name\": \"Jordan\", \"role\": \"Manager\" }\r
+
+      }"
+order: 1000

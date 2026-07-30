@@ -1,0 +1,12 @@
+owner: "56947739"
+team: "29476318"
+lastUpdatedBy: "56947739"
+lastRevision: 1785385883000
+name: User Mock Server
+color: null
+values:
+  - key: url
+    value: https://ff4f4499-5835-43c7-9189-94fe9af00a9b.mock.pstmn.io
+    enabled: true
+createdAt: 2026-07-30T04:31:23.000Z
+updatedAt: 2026-07-30T04:31:23.000Z
