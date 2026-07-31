@@ -1,0 +1,28 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/users"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "name": "New User",
+        "email": "new.user@example.com"
+      }
+response:
+  statusCode: 201
+  statusText: Created
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "id": 3,
+        "name": "New User",
+        "email": "new.user@example.com",
+        "createdAt": "2026-07-31T10:00:00Z"
+      }
+order: 1000

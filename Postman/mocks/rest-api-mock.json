@@ -1,0 +1,23 @@
+{
+  "id": "019fb97f-11a0-7314-8c89-9f992c5c882c",
+  "version": 1,
+  "name": "REST API Mock",
+  "slug": "new-mock-353a7",
+  "enableSession": true,
+  "protocol": "http",
+  "port": 3001,
+  "mockSrc": "./rest-api-mock.js",
+  "autoRestartOnChange": true,
+  "logging": {
+    "level": "verbose",
+    "showBody": true
+  },
+  "associations": [
+    {
+      "entityType": "collection",
+      "entityId": "3dF5bBd10241bb50A6d4181b",
+      "relation": "source",
+      "syncEnabled": true
+    }
+  ]
+}

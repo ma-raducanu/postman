@@ -1,0 +1,14 @@
+$kind: http-request
+name: PATCH /users/:id - Partial update
+url: "{{baseUrl}}/users/1"
+method: PATCH
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "email": "ana.new-email@example.com"
+    }
+examples: ./.resources/PATCH -users-id - Partial update.resources/examples
+order: 5000

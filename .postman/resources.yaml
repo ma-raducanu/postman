@@ -1,7 +1,9 @@
 workspace:
   id: d396fad6-33c7-4858-8712-0a9d08ed8c82
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
 cloudResources:
   collections:
-    ../postman/collections/User Mock API: 56947739-86aa7966-cbfa-4476-9882-d19611221ea7
-  environments:
-    ../postman/environments/User Mock Server.environment.yaml: 56947739-0c7456b6-476c-46ba-a372-37eccd8efc95
+    ../postman/collections/REST API Mock - Users: 29870b14-9e01-4713-8375-05aa4bc60a33
+  environments: {}

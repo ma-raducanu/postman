@@ -1,6 +1,0 @@
-$kind: http-request
-url: "{{url}}/users"
-method: GET
-settings: {}
-examples: ./.resources/Get all users.resources/examples
-order: 1000

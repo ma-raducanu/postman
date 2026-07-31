@@ -1,0 +1,15 @@
+$kind: http-request
+name: PUT /users/:id - Replace user
+url: "{{baseUrl}}/users/1"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "Ana Popescu Updated",
+      "email": "ana.updated@example.com"
+    }
+examples: ./.resources/PUT -users-id - Replace user.resources/examples
+order: 4000

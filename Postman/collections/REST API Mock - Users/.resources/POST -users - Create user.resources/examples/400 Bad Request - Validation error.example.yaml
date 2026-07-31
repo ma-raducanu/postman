@@ -1,0 +1,25 @@
+$kind: http-example
+request:
+  url: "{{baseUrl}}/users"
+  method: POST
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "name": ""
+      }
+response:
+  statusCode: 400
+  statusText: Bad Request
+  headers:
+    Content-Type: application/json
+  body:
+    type: text
+    content: |-
+      {
+        "error": "ValidationError",
+        "message": "name and email are required"
+      }
+order: 2000

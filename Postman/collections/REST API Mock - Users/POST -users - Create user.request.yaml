@@ -1,0 +1,15 @@
+$kind: http-request
+name: POST /users - Create user
+url: "{{baseUrl}}/users"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "name": "New User",
+      "email": "new.user@example.com"
+    }
+examples: ./.resources/POST -users - Create user.resources/examples
+order: 3000

@@ -1,0 +1,4 @@
+$kind: collection
+description: Sample collection covering GET, POST, PUT, PATCH, DELETE for a /users resource. Import this into Postman, then create a Mock Server from it.
+variables:
+  baseUrl: https://api.example.com

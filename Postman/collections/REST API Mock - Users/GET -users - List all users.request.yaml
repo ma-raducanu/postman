@@ -1,0 +1,6 @@
+$kind: http-request
+name: GET /users - List all users
+url: "{{baseUrl}}/users"
+method: GET
+examples: ./.resources/GET -users - List all users.resources/examples
+order: 1000

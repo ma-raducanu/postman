@@ -1,0 +1,6 @@
+$kind: http-request
+name: DELETE /users/:id - Delete user
+url: "{{baseUrl}}/users/1"
+method: DELETE
+examples: ./.resources/DELETE -users-id - Delete user.resources/examples
+order: 6000
