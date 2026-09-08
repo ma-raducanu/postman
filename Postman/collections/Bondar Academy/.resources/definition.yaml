@@ -1,5 +1,11 @@
 $kind: collection
 variables:
-  - key: JWT
+  - key: user_email
+    secret: true
+    disabled: false
+  - key: user_password
+    secret: true
+    disabled: false
+  - key: jwt
     secret: true
     disabled: false

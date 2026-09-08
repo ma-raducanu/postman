@@ -2,7 +2,7 @@ $kind: http-request
 url: https://conduit-api.bondaracademy.com/api/articles/
 method: POST
 headers:
-  Authorization: Token {{vault:supabase_service_role_api_key_19bo}}
+  Authorization: Token {{jwt}}
 body:
   type: json
   content: "{\r

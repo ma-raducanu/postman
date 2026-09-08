@@ -2,16 +2,16 @@ $kind: http-request
 url: https://conduit-api.bondaracademy.com/api/users/login
 method: POST
 headers:
-  Authorization: Token {{vault:supabase_service_role_api_key_19bo}}
+  Authorization: Token {{jwt}}
 body:
   type: json
   content: "{\r
 
     \    \"user\": {\r
 
-    \        \"email\": \"mircea.alexandru.vi.raducanu@gmail.com\",\r
+    \        \"email\": \"{{user_email}}\",\r
 
-    \        \"password\": \"Testing123!\"\r
+    \        \"password\": \"{{user_password}}\"\r
 
     \    }\r
 
