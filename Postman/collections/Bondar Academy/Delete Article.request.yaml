@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://conduit-api.bondaracademy.com/api/articles/Test-Title-67054
+method: DELETE
+headers:
+  Authorization: Token {{vault:supabase_service_role_api_key_19bo}}
+order: 4405517069016098

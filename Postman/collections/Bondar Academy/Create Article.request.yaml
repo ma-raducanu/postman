@@ -1,0 +1,27 @@
+$kind: http-request
+url: https://conduit-api.bondaracademy.com/api/articles/
+method: POST
+headers:
+  Authorization: Token {{vault:supabase_service_role_api_key_19bo}}
+body:
+  type: json
+  content: "{\r
+
+    \  \"article\": {\r
+
+    \    \"title\": \"Test Title\",\r
+
+    \    \"description\": \"Test description\",\r
+
+    \    \"body\": \"Test article\",\r
+
+    \    \"tagList\": [\r
+
+    \      \"Test tags\"\r
+
+    \    ]\r
+
+    \  }\r
+
+    }"
+order: 4387745450085770

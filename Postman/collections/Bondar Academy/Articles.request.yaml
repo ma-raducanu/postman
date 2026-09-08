@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://conduit-api.bondaracademy.com/api/articles?limit=1&offset=0
+method: GET
+queryParams:
+  limit: "1"
+  offset: "0"
+order: 1788878223325
