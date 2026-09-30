@@ -1,9 +1,18 @@
 $kind: http-request
-url: "{{baseUrl}}/tools?category=ladders&results=1&available=true"
+url: "{{baseUrl}}/tools"
 method: GET
 queryParams:
-  category: ladders
-  results: "1"
-  available: "true"
+  - key: category
+    value: ladders
+    disabled: true
+    description: ""
+  - key: results
+    value: "1"
+    disabled: true
+    description: ""
+  - key: available
+    value: "false"
+    disabled: true
+    description: ""
 examples: .resources/Get all tools.resources/examples
-order: 1363587909260041
+order: 3000

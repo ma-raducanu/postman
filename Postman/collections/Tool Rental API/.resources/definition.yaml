@@ -1,3 +1,8 @@
 $kind: collection
 variables:
-  baseUrl: ""
+  - key: baseUrl
+    value: ""
+    disabled: false
+  - key: apiToken
+    secret: true
+    disabled: false

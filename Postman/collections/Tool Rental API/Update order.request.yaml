@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{baseUrl}}/orders/:orderId"
+method: PATCH
+pathVariables:
+  orderId: 1taZkzNJZKvsLaHz324Af
+body:
+  type: json
+  content: "{\r
+
+    \ \"customerName\": \"{{$randomFirstName}} {{$randomLastName}}\",\r
+
+    \ \"comment\": \"I got the order, please update your system\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{apiToken}}"
+order: 9000

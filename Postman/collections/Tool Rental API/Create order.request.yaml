@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/orders"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \ \"toolId\": 4643,\r
+
+    \ \"customerName\": \"{{$randomFullName}}\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{apiToken}}"
+order: 8000

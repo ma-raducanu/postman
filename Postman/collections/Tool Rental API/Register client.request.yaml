@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api-clients"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \   \"clientName\": \"{{$randomUserName}}\",\r
+
+    \   \"clientEmail\": \"{{$randomEmail}}\"\r
+
+    }"
+order: 7000

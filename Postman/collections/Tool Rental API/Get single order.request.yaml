@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{baseUrl}}/orders/:orderId?invoice=false"
+method: GET
+queryParams:
+  invoice: "false"
+pathVariables:
+  - key: orderId
+    value: 3r_QAtAT394p-jldgVj2n
+    description: ""
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{apiToken}}"
+order: 5000

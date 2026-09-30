@@ -1,11 +1,16 @@
 $kind: http-request
-url: "{{baseUrl}}/tools/:id"
+url: "{{baseUrl}}/tools/:toolId"
 method: GET
+queryParams:
+  - key: user-manual
+    value: "true"
+    disabled: true
+    description: ""
 pathVariables:
-  - key: id
-    value: "4643"
+  - key: toolId
+    value: "6483"
     description: ""
 body:
   type: json
   content: ""
-order: 2897560985833624
+order: 4000

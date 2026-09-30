@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{baseUrl}}/orders/:orderId"
+method: DELETE
+pathVariables:
+  - key: orderId
+    value: Xek6nQ53OhTNV3hNKcIRo
+    description: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{apiToken}}"
+order: 9165
