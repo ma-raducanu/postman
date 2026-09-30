@@ -1,8 +1,6 @@
 $kind: http-request
 url: https://conduit-api.bondaracademy.com/api/users/login
 method: POST
-headers:
-  Authorization: Token {{jwt}}
 body:
   type: json
   content: "{\r

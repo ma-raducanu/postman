@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{baseUrl}}/status"
+method: GET
+body:
+  type: json
+  content: ""
+order: 1124864933484174

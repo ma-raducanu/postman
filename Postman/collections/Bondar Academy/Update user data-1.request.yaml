@@ -1,0 +1,26 @@
+$kind: http-request
+name: Update user data
+url: https://conduit-api.bondaracademy.com/api/user
+method: PUT
+headers:
+  Authorization: Token {{jwt}}
+body:
+  type: json
+  content: "{\r
+
+    \  \"user\": {\r
+
+    \    \"image\": \"https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1679921049/Image_URL_header/Image_URL_header-png?_i=AA\",\r
+
+    \    \"username\": \"ma-raducanu\",\r
+
+    \    \"bio\": \"Test bio\",\r
+
+    \    \"email\": \"{{user_email}}\",\r
+
+    \    \"password\": \"{{user_password}}\"\r
+
+    \  }\r
+
+    }"
+order: 4379610106539713

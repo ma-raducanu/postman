@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/tools?category=ladders&results=1&available=true"
+method: GET
+queryParams:
+  category: ladders
+  results: "1"
+  available: "true"
+examples: .resources/Get all tools.resources/examples
+order: 1363587909260041

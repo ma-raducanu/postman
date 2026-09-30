@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://conduit-api.bondaracademy.com/api/users
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"user\": {\r
+
+    \    \"email\": \"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\",\r
+
+    \    \"password\": \"dd\",\r
+
+    \    \"username\": \"aaaaaaaaaaaaaaaaaaaaa\"\r
+
+    \  }\r
+
+    }"
+order: 939466511744438

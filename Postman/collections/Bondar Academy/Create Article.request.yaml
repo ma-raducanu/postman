@@ -2,7 +2,7 @@ $kind: http-request
 url: https://conduit-api.bondaracademy.com/api/articles/
 method: POST
 headers:
-  Authorization: Token {{jwt}}
+  Authorization: "Token "
 body:
   type: json
   content: "{\r
@@ -24,4 +24,15 @@ body:
     \  }\r
 
     }"
-order: 4387745450085770
+auth:
+  type: jwt
+  credentials:
+    algorithm: HS256
+    isSecretBase64Encoded: false
+    payload: "{}"
+    addTokenTo: header
+    headerPrefix: ""
+    queryParamKey: token
+    header: ""
+    secret: ""
+order: 4362701761962486

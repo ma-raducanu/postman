@@ -1,0 +1,30 @@
+$kind: http-request
+name: Update article
+url: https://conduit-api.bondaracademy.com/api/articles/Test-Title-67054
+method: PUT
+headers:
+  Authorization: Token {{jwt}}
+body:
+  type: json
+  content: "{\r
+
+    \  \"article\": {\r
+
+    \    \"title\": \"Test Article Update\",\r
+
+    \    \"description\": \"Test description update\",\r
+
+    \    \"body\": \"Test body update\",\r
+
+    \    \"tagList\": [\r
+
+    \      \"Test tag update\"\r
+
+    \    ],\r
+
+    \    \"slug\": \"Test-Title-Update-67054\"\r
+
+    \  }\r
+
+    }"
+order: 4376491149359808

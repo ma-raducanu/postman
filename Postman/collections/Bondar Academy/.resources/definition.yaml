@@ -6,6 +6,3 @@ variables:
   - key: user_password
     secret: true
     disabled: false
-  - key: jwt
-    secret: true
-    disabled: false

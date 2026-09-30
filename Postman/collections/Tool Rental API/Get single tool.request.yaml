@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{baseUrl}}/tools/:id"
+method: GET
+pathVariables:
+  - key: id
+    value: "4643"
+    description: ""
+body:
+  type: json
+  content: ""
+order: 2897560985833624
