@@ -4,4 +4,18 @@ method: GET
 body:
   type: json
   content: ""
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code is 200', () => pm.response.to.have.status(200))\r
+
+      \r
+
+      pm.test('Message is \"Welcome to the Simple Tool Rental API.\"', () => {\r
+
+      \  const response = pm.response.json()\r
+
+      \  pm.expect(response.message).to.equal(\"Welcome to the Simple Tool Rental API.\")\r
+
+      })"
+    language: text/javascript
 order: 1000

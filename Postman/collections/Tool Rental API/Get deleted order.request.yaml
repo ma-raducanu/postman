@@ -1,15 +1,12 @@
 $kind: http-request
-url: "{{baseUrl}}/orders"
+url: "{{baseUrl}}/orders/{{orderId}}"
 method: GET
-body:
-  type: json
-  content: ""
 auth:
   type: bearer
   credentials:
     token: "{{accessToken}}"
 scripts:
   - type: afterResponse
-    code: pm.test('Status code is 200', () => pm.response.to.have.status(200))
+    code: pm.test('Status code is 404', () => pm.response.to.have.status(404))
     language: text/javascript
-order: 8000
+order: 3661883661879303

@@ -1,11 +1,10 @@
 $kind: http-request
-url: "{{baseUrl}}/orders/:orderId?invoice=false"
+url: "{{baseUrl}}/orders/{{orderId}}"
 method: GET
 queryParams:
-  invoice: "false"
-pathVariables:
-  - key: orderId
-    value: 3r_QAtAT394p-jldgVj2n
+  - key: invoice
+    value: "false"
+    disabled: true
     description: ""
 body:
   type: json
@@ -13,5 +12,9 @@ body:
 auth:
   type: bearer
   credentials:
-    token: "{{apiToken}}"
-order: 5000
+    token: "{{accessToken}}"
+scripts:
+  - type: afterResponse
+    code: pm.test('Status code is 200', () => pm.response.to.have.status(200))
+    language: text/javascript
+order: 8674

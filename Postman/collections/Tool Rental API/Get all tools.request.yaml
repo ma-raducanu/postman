@@ -11,8 +11,40 @@ queryParams:
     disabled: true
     description: ""
   - key: available
-    value: "false"
+    value: "true"
     disabled: true
     description: ""
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code is 200', () => pm.response.to.have.status(200))\r
+
+      \r
+
+      const response = pm.response.json()\r
+
+      const tools = response.filter((tool) => tool.inStock === true)\r
+
+      const tool = tools[0]\r
+
+      if (tool) {\r
+
+      \  pm.collectionVariables.set('toolId', tool.id)\r
+
+      \  // pm.collectionVariables.set('toolCategory', tool.category)\r
+
+      }\r
+
+      \r
+
+      pm.test('Tool found', () => {\r
+
+      \  pm.expect(tool).to.be.an('object')\r
+
+      \  pm.expect(tool.category).to.equal(pm.collectionVariables.get('toolCategory'))\r
+
+      \  pm.expect(tool.inStock).to.equal(true)\r
+
+      })"
+    language: text/javascript
 examples: .resources/Get all tools.resources/examples
 order: 3000

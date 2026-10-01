@@ -1,12 +1,12 @@
 $kind: http-request
-url: "{{baseUrl}}/orders/:orderId"
+url: "{{baseUrl}}/orders/{{orderId}}"
 method: DELETE
-pathVariables:
-  - key: orderId
-    value: Xek6nQ53OhTNV3hNKcIRo
-    description: ""
 auth:
   type: bearer
   credentials:
-    token: "{{apiToken}}"
-order: 9165
+    token: "{{accessToken}}"
+scripts:
+  - type: afterResponse
+    code: pm.test('Status code is 204', () => pm.response.to.have.status(204))
+    language: text/javascript
+order: 11000

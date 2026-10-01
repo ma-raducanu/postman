@@ -1,16 +1,28 @@
 $kind: http-request
-url: "{{baseUrl}}/tools/:toolId"
+url: "{{baseUrl}}/tools/{{toolId}}"
 method: GET
 queryParams:
   - key: user-manual
     value: "true"
     disabled: true
     description: ""
-pathVariables:
-  - key: toolId
-    value: "6483"
-    description: ""
 body:
   type: json
   content: ""
+scripts:
+  - type: afterResponse
+    code: "pm.test('Status code is 200', () => pm.response.to.have.status(200))\r
+
+      \r
+
+      pm.test('Response contains expected tool information', () => {\r
+
+      \  const response = pm.response.json()\r
+
+      \  pm.expect(response.id).to.equal(pm.collectionVariables.get('toolId'))\r
+
+      \  pm.expect(response['current-stock']).to.be.above(0)\r
+
+      })"
+    language: text/javascript
 order: 4000
